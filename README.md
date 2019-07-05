@@ -1,5 +1,11 @@
 # Access Data Parser
 
+[![GitHub issues](https://img.shields.io/github/issues/derevandal/access-data-parser.svg)](https://github.com/derevandal/access-data-parser/issues)
+[![GitHub stars](https://img.shields.io/github/stars/derevandal/access-data-parser.svg)](https://github.com/derevandal/access-data-parser/stargazers)
+[![GitHub license](https://img.shields.io/github/license/derevandal/access-data-parser.svg)](https://github.com/derevandal/access-data-parser/blob/master/LICENSE)
+[![Coverage Status](https://coveralls.io/repos/github/derevandal/access-data-parser/badge.svg?branch=master)](https://coveralls.io/github/derevandal/access-data-parser?branch=master)
+[![Build Status](https://travis-ci.org/derevandal/access-data-parser.svg?branch=master)](https://travis-ci.org/derevandal/access-data-parser)
+
 > This module will receive `document.referrer` and some query params to determine where access come from.
 
 ## Install
