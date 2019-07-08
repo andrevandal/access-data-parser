@@ -34,7 +34,8 @@ console.log(new AccessData(queriesFromBrowser))
  {
    source: 'google',
    medium: 'organic',
-   referrer: 'https://google.com/'
+   referrer: 'https://google.com/',
+   channel: 'organic'
  }
 */
 ```
