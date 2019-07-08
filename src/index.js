@@ -28,8 +28,14 @@ const accesData = function(queries) {
   } = renameKeys(defaultQueryKeys, queries)
 
   this.isGoogleAds = !!gclid || source === 'googleads'
+  this.isFacebookAds = !!fbclid || source === 'facebookads'
+
+  if ((this.isGoogleAds || this.isFacebookAds) && !medium) medium = 'cpc'
+
   if (this.isGoogleAds) source = 'googleads'
-  if (this.isGoogleAds && !medium) medium = 'cpc'
+  else if (this.isFacebookAds) {
+    source = 'facebookads'
+  }
 
   return pickBy({
     source,
