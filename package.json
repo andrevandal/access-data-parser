@@ -1,6 +1,6 @@
 {
   "name": "access-data-parser",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "This module will receive `document.referrer` and some query params to determine where access come from.",
   "main": "src/index.js",
   "scripts": {
