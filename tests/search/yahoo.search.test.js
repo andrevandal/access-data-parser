@@ -1,4 +1,4 @@
-const AccessData = require('../src/index')
+const AccessData = require('../../src/index')
 
 describe('yahoo search support', () => {
   test('referrer = https://search.yahoo.com', () => {

@@ -1,45 +1,45 @@
-const AccessData = require('../src/index')
+const AccessData = require('../../src/index')
 
-describe('test facebook ads support', () => {
+describe('test google ads support', () => {
   test('complete UTMs', () => {
     expect(
       new AccessData({
-        utm_source: 'facebookads',
+        utm_source: 'googleads',
         utm_medium: 'cpc',
         utm_campaign: 'campaign',
         utm_content: 'content',
-        utm_term: 'keyword',
-        fbclid: 'fbclid'
+        utm_term: 'ketword',
+        gclid: 'gclid'
       })
     ).toMatchObject({
-      source: 'facebookads',
+      source: 'googleads',
       medium: 'cpc',
       campaign: 'campaign',
       content: 'content',
-      term: 'keyword',
-      fbclid: 'fbclid'
+      term: 'ketword',
+      gclid: 'gclid'
     })
   })
 
-  test('only fbclid', () => {
+  test('only gclid', () => {
     expect(
       new AccessData({
-        fbclid: 'fbclid'
+        gclid: 'gclid'
       })
     ).toMatchObject({
-      source: 'facebookads',
+      source: 'googleads',
       medium: 'cpc',
-      fbclid: 'fbclid'
+      gclid: 'gclid'
     })
   })
 
   test('only source', () => {
     expect(
       new AccessData({
-        source: 'facebookads'
+        source: 'googleads'
       })
     ).toMatchObject({
-      source: 'facebookads',
+      source: 'googleads',
       medium: 'cpc'
     })
   })

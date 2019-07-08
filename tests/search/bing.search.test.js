@@ -1,4 +1,4 @@
-const AccessData = require('../src/index')
+const AccessData = require('../../src/index')
 
 describe('bing search support', () => {
   test('referrer = https://bing.com', () => {

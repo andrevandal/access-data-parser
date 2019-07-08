@@ -1,6 +1,6 @@
-const AccessData = require('../src/index')
+const AccessData = require('../../src/index')
 
-describe('duckduckgo search support', () => {
+describe('youtube search support', () => {
   test('referrer = https://youtube.com', () => {
     expect(
       new AccessData({
