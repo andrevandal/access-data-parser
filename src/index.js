@@ -27,6 +27,10 @@ const accesData = function(queries) {
     fbclid
   } = renameKeys(defaultQueryKeys, queries)
 
+  this.isGoogleAds = !!gclid || source === 'googleads'
+  if (this.isGoogleAds) source = 'googleads'
+  if (this.isGoogleAds && !medium) medium = 'cpc'
+
   return pickBy({
     source,
     medium,
