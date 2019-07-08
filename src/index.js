@@ -35,6 +35,8 @@ const accesData = function(queries) {
   this.isDuckSearch = this.hasReferrer && referrer.match(/duckduckgo.com/)
   this.isYahooSearch = this.hasReferrer && referrer.match(/search.yahoo.com/)
 
+  this.isFacebookSocial = this.hasReferrer && referrer.match(/facebook.com/)
+
   if ((this.isGoogleAds || this.isFacebookAds) && !medium) medium = 'cpc'
 
   if (this.hasReferrer) {
@@ -58,6 +60,9 @@ const accesData = function(queries) {
   } else if (this.isYahooSearch) {
     source = 'yahoo'
     medium = 'organic'
+  } else if (this.isFacebookSocial) {
+    source = 'facebook'
+    medium = 'social'
   }
 
   return pickBy({
