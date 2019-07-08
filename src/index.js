@@ -47,6 +47,7 @@ const accesData = function(queries) {
     referrer = /^(http|https):\/\//.test(referrer)
       ? referrer
       : `https://${referrer}`
+    medium = 'referral'
   }
 
   if (this.isGoogleAds) source = 'googleads'
