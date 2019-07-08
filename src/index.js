@@ -27,23 +27,28 @@ const accesData = function(queries) {
     fbclid
   } = renameKeys(defaultQueryKeys, queries)
 
-  if (referrer) {
+  this.hasReferrer = !!referrer
+  this.isGoogleAds = !!gclid || source === 'googleads'
+  this.isFacebookAds = !!fbclid || source === 'facebookads'
+  this.isGoogleSearch = this.hasReferrer && referrer.match(/google.com/)
+  this.isBingSearch = this.hasReferrer && referrer.match(/bing.com/)
+
+  if ((this.isGoogleAds || this.isFacebookAds) && !medium) medium = 'cpc'
+
+  if (this.hasReferrer) {
     referrer = /^(http|https):\/\//.test(referrer)
       ? referrer
       : `https://${referrer}`
   }
-
-  this.isGoogleAds = !!gclid || source === 'googleads'
-  this.isFacebookAds = !!fbclid || source === 'facebookads'
-  this.isGoogleSearch = !!referrer && referrer.match(/google.com/)
-
-  if ((this.isGoogleAds || this.isFacebookAds) && !medium) medium = 'cpc'
 
   if (this.isGoogleAds) source = 'googleads'
   else if (this.isFacebookAds) {
     source = 'facebookads'
   } else if (this.isGoogleSearch) {
     source = 'google'
+    medium = 'organic'
+  } else if (this.isBingSearch) {
+    source = 'bing'
     medium = 'organic'
   }
 
