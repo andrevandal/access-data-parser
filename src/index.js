@@ -28,6 +28,7 @@ const accesData = function(queries) {
   } = renameKeys(defaultQueryKeys, queries)
 
   this.hasReferrer = !!referrer
+  this.hasSource = !!source
   this.isGoogleAds = !!gclid || source === 'googleads'
   this.isFacebookAds = !!fbclid || source === 'facebookads'
   this.isGoogleSearch = this.hasReferrer && referrer.match(/google.com/)
@@ -75,6 +76,14 @@ const accesData = function(queries) {
   } else if (this.isYoutubeSocial) {
     source = 'youtube'
     medium = 'social'
+  } else if (
+    !this.hasReferrer &&
+    !this.hasSource &&
+    !this.isGoogleAds &&
+    !this.isFacebookAds
+  ) {
+    source = 'direct'
+    medium = '(not set)'
   }
 
   return pickBy({
