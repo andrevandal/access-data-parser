@@ -50,3 +50,42 @@ describe('test rename props', () => {
     })
   })
 })
+
+describe('test some channels', () => {
+  test('channel == email', () => {
+    expect(
+      new AccessData({
+        utm_source: 'RD+Station',
+        utm_medium: 'email'
+      })
+    ).toMatchObject({
+      source: 'RD+Station',
+      medium: 'email',
+      channel: 'email'
+    })
+  })
+  test('channel == e-mail', () => {
+    expect(
+      new AccessData({
+        utm_source: 'RD+Station',
+        utm_medium: 'e-mail'
+      })
+    ).toMatchObject({
+      source: 'RD+Station',
+      medium: 'e-mail',
+      channel: 'email'
+    })
+  })
+  test('channel == social', () => {
+    expect(
+      new AccessData({
+        utm_source: 'blog',
+        utm_medium: 'sm'
+      })
+    ).toMatchObject({
+      source: 'blog',
+      medium: 'sm',
+      channel: 'social'
+    })
+  })
+})
