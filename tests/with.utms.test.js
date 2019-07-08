@@ -51,7 +51,6 @@ describe('test rename props', () => {
   })
 })
 
-
 describe('test some channels', () => {
   test('channel == email', () => {
     expect(
@@ -65,7 +64,7 @@ describe('test some channels', () => {
       channel: 'email'
     })
   })
-  test('channel == email', () => {
+  test('channel == e-mail', () => {
     expect(
       new AccessData({
         utm_source: 'RD+Station',
