@@ -37,6 +37,7 @@ const accesData = function(queries) {
 
   this.isFacebookSocial = this.hasReferrer && referrer.match(/facebook.com/)
   this.isInstagramSocial = this.hasReferrer && referrer.match(/instagram.com/)
+  this.isLinkedinSocial = this.hasReferrer && referrer.match(/linkedin.com/)
 
   if ((this.isGoogleAds || this.isFacebookAds) && !medium) medium = 'cpc'
 
@@ -66,6 +67,9 @@ const accesData = function(queries) {
     medium = 'social'
   } else if (this.isInstagramSocial) {
     source = 'instagram'
+    medium = 'social'
+  } else if (this.isLinkedinSocial) {
+    source = 'linkedin'
     medium = 'social'
   }
 
