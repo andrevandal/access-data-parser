@@ -43,7 +43,7 @@ describe('test rename props', () => {
         referral: 'referral'
       })
     ).toMatchObject({
-      referrer: 'referral'
+      referrer: 'https://referral'
     })
   })
 })
