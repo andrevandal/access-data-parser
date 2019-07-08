@@ -15,7 +15,8 @@ describe('test rename props', () => {
       medium: 'medium',
       campaign: 'campaign',
       content: 'content',
-      term: 'term'
+      term: 'term',
+      channel: 'medium'
     })
   })
 
@@ -33,7 +34,8 @@ describe('test rename props', () => {
       medium: 'medium',
       campaign: 'campaign',
       content: 'content',
-      term: 'term'
+      term: 'term',
+      channel: 'medium'
     })
   })
 
@@ -43,7 +45,8 @@ describe('test rename props', () => {
         referral: 'referral'
       })
     ).toMatchObject({
-      referrer: 'https://referral'
+      referrer: 'https://referral',
+      channel: 'referral'
     })
   })
 })

@@ -9,7 +9,8 @@ describe('bing search support', () => {
     ).toMatchObject({
       source: 'bing',
       medium: 'organic',
-      referrer: 'https://bing.com'
+      referrer: 'https://bing.com',
+      channel: 'organic'
     })
   })
 
@@ -21,7 +22,8 @@ describe('bing search support', () => {
     ).toMatchObject({
       source: 'bing',
       medium: 'organic',
-      referrer: 'https://bing.com'
+      referrer: 'https://bing.com',
+      channel: 'organic'
     })
   })
 
@@ -33,7 +35,8 @@ describe('bing search support', () => {
     ).toMatchObject({
       source: 'bing',
       medium: 'organic',
-      referrer: 'http://bing.com'
+      referrer: 'http://bing.com',
+      channel: 'organic'
     })
   })
   test('referral = http://bing.com', () => {
@@ -44,7 +47,8 @@ describe('bing search support', () => {
     ).toMatchObject({
       source: 'bing',
       medium: 'organic',
-      referrer: 'http://bing.com'
+      referrer: 'http://bing.com',
+      channel: 'organic'
     })
   })
 
@@ -56,7 +60,8 @@ describe('bing search support', () => {
     ).toMatchObject({
       source: 'bing',
       medium: 'organic',
-      referrer: 'https://br.bing.com'
+      referrer: 'https://br.bing.com',
+      channel: 'organic'
     })
   })
   test('referral = https://br.bing.com', () => {
@@ -67,7 +72,8 @@ describe('bing search support', () => {
     ).toMatchObject({
       source: 'bing',
       medium: 'organic',
-      referrer: 'https://br.bing.com'
+      referrer: 'https://br.bing.com',
+      channel: 'organic'
     })
   })
 
@@ -79,7 +85,8 @@ describe('bing search support', () => {
     ).toMatchObject({
       source: 'bing',
       medium: 'organic',
-      referrer: 'https://br.bing.com'
+      referrer: 'https://br.bing.com',
+      channel: 'organic'
     })
   })
   test('referral = br.bing.com', () => {
@@ -90,7 +97,8 @@ describe('bing search support', () => {
     ).toMatchObject({
       source: 'bing',
       medium: 'organic',
-      referrer: 'https://br.bing.com'
+      referrer: 'https://br.bing.com',
+      channel: 'organic'
     })
   })
 })

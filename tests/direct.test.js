@@ -7,6 +7,7 @@ describe('direct access support', () => {
         referrer: ''
       })
     ).toMatchObject({
+      channel: 'direct',
       source: 'direct',
       medium: '(not set)'
     })
@@ -18,6 +19,7 @@ describe('direct access support', () => {
         referral: ''
       })
     ).toMatchObject({
+      channel: 'direct',
       source: 'direct',
       medium: '(not set)'
     })

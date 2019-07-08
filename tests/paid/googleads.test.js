@@ -17,7 +17,8 @@ describe('test google ads support', () => {
       campaign: 'campaign',
       content: 'content',
       term: 'ketword',
-      gclid: 'gclid'
+      gclid: 'gclid',
+      channel: 'paid'
     })
   })
 
@@ -29,7 +30,8 @@ describe('test google ads support', () => {
     ).toMatchObject({
       source: 'googleads',
       medium: 'cpc',
-      gclid: 'gclid'
+      gclid: 'gclid',
+      channel: 'paid'
     })
   })
 
@@ -40,7 +42,8 @@ describe('test google ads support', () => {
       })
     ).toMatchObject({
       source: 'googleads',
-      medium: 'cpc'
+      medium: 'cpc',
+      channel: 'paid'
     })
   })
 })

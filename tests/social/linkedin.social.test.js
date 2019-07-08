@@ -9,7 +9,8 @@ describe('linkedin search support', () => {
     ).toMatchObject({
       source: 'linkedin',
       medium: 'social',
-      referrer: 'https://www.linkedin.com'
+      referrer: 'https://www.linkedin.com',
+      channel: 'social'
     })
   })
 
@@ -21,7 +22,8 @@ describe('linkedin search support', () => {
     ).toMatchObject({
       source: 'linkedin',
       medium: 'social',
-      referrer: 'https://www.linkedin.com'
+      referrer: 'https://www.linkedin.com',
+      channel: 'social'
     })
   })
 
@@ -33,7 +35,8 @@ describe('linkedin search support', () => {
     ).toMatchObject({
       source: 'linkedin',
       medium: 'social',
-      referrer: 'http://www.linkedin.com'
+      referrer: 'http://www.linkedin.com',
+      channel: 'social'
     })
   })
   test('referral = http://www.linkedin.com', () => {
@@ -44,7 +47,8 @@ describe('linkedin search support', () => {
     ).toMatchObject({
       source: 'linkedin',
       medium: 'social',
-      referrer: 'http://www.linkedin.com'
+      referrer: 'http://www.linkedin.com',
+      channel: 'social'
     })
   })
 })

@@ -9,7 +9,8 @@ describe('facebook search support', () => {
     ).toMatchObject({
       source: 'facebook',
       medium: 'social',
-      referrer: 'https://facebook.com'
+      referrer: 'https://facebook.com',
+      channel: 'social'
     })
   })
 
@@ -21,7 +22,8 @@ describe('facebook search support', () => {
     ).toMatchObject({
       source: 'facebook',
       medium: 'social',
-      referrer: 'https://facebook.com'
+      referrer: 'https://facebook.com',
+      channel: 'social'
     })
   })
 
@@ -33,7 +35,8 @@ describe('facebook search support', () => {
     ).toMatchObject({
       source: 'facebook',
       medium: 'social',
-      referrer: 'http://facebook.com'
+      referrer: 'http://facebook.com',
+      channel: 'social'
     })
   })
   test('referral = http://facebook.com', () => {
@@ -44,7 +47,8 @@ describe('facebook search support', () => {
     ).toMatchObject({
       source: 'facebook',
       medium: 'social',
-      referrer: 'http://facebook.com'
+      referrer: 'http://facebook.com',
+      channel: 'social'
     })
   })
 })
