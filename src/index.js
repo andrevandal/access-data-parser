@@ -33,6 +33,7 @@ const accesData = function(queries) {
   this.isGoogleSearch = this.hasReferrer && referrer.match(/google.com/)
   this.isBingSearch = this.hasReferrer && referrer.match(/bing.com/)
   this.isDuckSearch = this.hasReferrer && referrer.match(/duckduckgo.com/)
+  this.isYahooSearch = this.hasReferrer && referrer.match(/search.yahoo.com/)
 
   if ((this.isGoogleAds || this.isFacebookAds) && !medium) medium = 'cpc'
 
@@ -53,6 +54,9 @@ const accesData = function(queries) {
     medium = 'organic'
   } else if (this.isDuckSearch) {
     source = 'duckduckgo'
+    medium = 'organic'
+  } else if (this.isYahooSearch) {
+    source = 'yahoo'
     medium = 'organic'
   }
 
