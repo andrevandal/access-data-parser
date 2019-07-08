@@ -9,7 +9,8 @@ describe('youtube search support', () => {
     ).toMatchObject({
       source: 'youtube',
       medium: 'social',
-      referrer: 'https://youtube.com'
+      referrer: 'https://youtube.com',
+      channel: 'social'
     })
   })
 
@@ -21,7 +22,8 @@ describe('youtube search support', () => {
     ).toMatchObject({
       source: 'youtube',
       medium: 'social',
-      referrer: 'https://youtube.com'
+      referrer: 'https://youtube.com',
+      channel: 'social'
     })
   })
 
@@ -33,7 +35,8 @@ describe('youtube search support', () => {
     ).toMatchObject({
       source: 'youtube',
       medium: 'social',
-      referrer: 'http://youtube.com'
+      referrer: 'http://youtube.com',
+      channel: 'social'
     })
   })
   test('referral = http://youtube.com', () => {
@@ -44,7 +47,8 @@ describe('youtube search support', () => {
     ).toMatchObject({
       source: 'youtube',
       medium: 'social',
-      referrer: 'http://youtube.com'
+      referrer: 'http://youtube.com',
+      channel: 'social'
     })
   })
 })

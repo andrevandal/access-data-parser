@@ -9,7 +9,8 @@ describe('instagram search support', () => {
     ).toMatchObject({
       source: 'instagram',
       medium: 'social',
-      referrer: 'https://instagram.com'
+      referrer: 'https://instagram.com',
+      channel: 'social'
     })
   })
 
@@ -21,7 +22,8 @@ describe('instagram search support', () => {
     ).toMatchObject({
       source: 'instagram',
       medium: 'social',
-      referrer: 'https://instagram.com'
+      referrer: 'https://instagram.com',
+      channel: 'social'
     })
   })
 
@@ -33,7 +35,8 @@ describe('instagram search support', () => {
     ).toMatchObject({
       source: 'instagram',
       medium: 'social',
-      referrer: 'http://instagram.com'
+      referrer: 'http://instagram.com',
+      channel: 'social'
     })
   })
   test('referral = http://instagram.com', () => {
@@ -44,7 +47,8 @@ describe('instagram search support', () => {
     ).toMatchObject({
       source: 'instagram',
       medium: 'social',
-      referrer: 'http://instagram.com'
+      referrer: 'http://instagram.com',
+      channel: 'social'
     })
   })
 })

@@ -9,7 +9,8 @@ describe('yahoo search support', () => {
     ).toMatchObject({
       source: 'yahoo',
       medium: 'organic',
-      referrer: 'https://search.yahoo.com'
+      referrer: 'https://search.yahoo.com',
+      channel: 'organic'
     })
   })
 
@@ -21,7 +22,8 @@ describe('yahoo search support', () => {
     ).toMatchObject({
       source: 'yahoo',
       medium: 'organic',
-      referrer: 'https://search.yahoo.com'
+      referrer: 'https://search.yahoo.com',
+      channel: 'organic'
     })
   })
 
@@ -33,7 +35,8 @@ describe('yahoo search support', () => {
     ).toMatchObject({
       source: 'yahoo',
       medium: 'organic',
-      referrer: 'http://search.yahoo.com'
+      referrer: 'http://search.yahoo.com',
+      channel: 'organic'
     })
   })
   test('referral = http://search.yahoo.com', () => {
@@ -44,7 +47,8 @@ describe('yahoo search support', () => {
     ).toMatchObject({
       source: 'yahoo',
       medium: 'organic',
-      referrer: 'http://search.yahoo.com'
+      referrer: 'http://search.yahoo.com',
+      channel: 'organic'
     })
   })
 
@@ -56,7 +60,8 @@ describe('yahoo search support', () => {
     ).toMatchObject({
       source: 'yahoo',
       medium: 'organic',
-      referrer: 'https://br.search.yahoo.com'
+      referrer: 'https://br.search.yahoo.com',
+      channel: 'organic'
     })
   })
   test('referral = https://br.search.yahoo.com', () => {
@@ -67,7 +72,8 @@ describe('yahoo search support', () => {
     ).toMatchObject({
       source: 'yahoo',
       medium: 'organic',
-      referrer: 'https://br.search.yahoo.com'
+      referrer: 'https://br.search.yahoo.com',
+      channel: 'organic'
     })
   })
 
@@ -79,7 +85,8 @@ describe('yahoo search support', () => {
     ).toMatchObject({
       source: 'yahoo',
       medium: 'organic',
-      referrer: 'https://br.search.yahoo.com'
+      referrer: 'https://br.search.yahoo.com',
+      channel: 'organic'
     })
   })
   test('referral = br.search.yahoo.com', () => {
@@ -90,7 +97,8 @@ describe('yahoo search support', () => {
     ).toMatchObject({
       source: 'yahoo',
       medium: 'organic',
-      referrer: 'https://br.search.yahoo.com'
+      referrer: 'https://br.search.yahoo.com',
+      channel: 'organic'
     })
   })
 })

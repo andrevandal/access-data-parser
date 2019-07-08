@@ -9,7 +9,8 @@ describe('google search support', () => {
     ).toMatchObject({
       source: 'google',
       medium: 'organic',
-      referrer: 'https://google.com'
+      referrer: 'https://google.com',
+      channel: 'organic'
     })
   })
 
@@ -21,7 +22,8 @@ describe('google search support', () => {
     ).toMatchObject({
       source: 'google',
       medium: 'organic',
-      referrer: 'https://google.com'
+      referrer: 'https://google.com',
+      channel: 'organic'
     })
   })
 
@@ -33,7 +35,8 @@ describe('google search support', () => {
     ).toMatchObject({
       source: 'google',
       medium: 'organic',
-      referrer: 'http://google.com'
+      referrer: 'http://google.com',
+      channel: 'organic'
     })
   })
   test('referral = http://google.com', () => {
@@ -44,7 +47,8 @@ describe('google search support', () => {
     ).toMatchObject({
       source: 'google',
       medium: 'organic',
-      referrer: 'http://google.com'
+      referrer: 'http://google.com',
+      channel: 'organic'
     })
   })
 
@@ -56,7 +60,8 @@ describe('google search support', () => {
     ).toMatchObject({
       source: 'google',
       medium: 'organic',
-      referrer: 'https://google.com.br'
+      referrer: 'https://google.com.br',
+      channel: 'organic'
     })
   })
   test('referral = https://google.com.br', () => {
@@ -67,7 +72,8 @@ describe('google search support', () => {
     ).toMatchObject({
       source: 'google',
       medium: 'organic',
-      referrer: 'https://google.com.br'
+      referrer: 'https://google.com.br',
+      channel: 'organic'
     })
   })
 
@@ -79,7 +85,8 @@ describe('google search support', () => {
     ).toMatchObject({
       source: 'google',
       medium: 'organic',
-      referrer: 'https://google.com.br'
+      referrer: 'https://google.com.br',
+      channel: 'organic'
     })
   })
   test('referral = google.com.br', () => {
@@ -90,7 +97,8 @@ describe('google search support', () => {
     ).toMatchObject({
       source: 'google',
       medium: 'organic',
-      referrer: 'https://google.com.br'
+      referrer: 'https://google.com.br',
+      channel: 'organic'
     })
   })
 })

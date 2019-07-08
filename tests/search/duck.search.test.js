@@ -9,7 +9,8 @@ describe('duckduckgo search support', () => {
     ).toMatchObject({
       source: 'duckduckgo',
       medium: 'organic',
-      referrer: 'https://duckduckgo.com'
+      referrer: 'https://duckduckgo.com',
+      channel: 'organic'
     })
   })
 
@@ -21,7 +22,8 @@ describe('duckduckgo search support', () => {
     ).toMatchObject({
       source: 'duckduckgo',
       medium: 'organic',
-      referrer: 'https://duckduckgo.com'
+      referrer: 'https://duckduckgo.com',
+      channel: 'organic'
     })
   })
 
@@ -33,7 +35,8 @@ describe('duckduckgo search support', () => {
     ).toMatchObject({
       source: 'duckduckgo',
       medium: 'organic',
-      referrer: 'http://duckduckgo.com'
+      referrer: 'http://duckduckgo.com',
+      channel: 'organic'
     })
   })
   test('referral = http://duckduckgo.com', () => {
@@ -44,7 +47,8 @@ describe('duckduckgo search support', () => {
     ).toMatchObject({
       source: 'duckduckgo',
       medium: 'organic',
-      referrer: 'http://duckduckgo.com'
+      referrer: 'http://duckduckgo.com',
+      channel: 'organic'
     })
   })
 })

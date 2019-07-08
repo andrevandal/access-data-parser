@@ -5,7 +5,7 @@ describe('test facebook ads support', () => {
     expect(
       new AccessData({
         utm_source: 'facebookads',
-        utm_medium: 'cpc',
+        utm_medium: 'cpm',
         utm_campaign: 'campaign',
         utm_content: 'content',
         utm_term: 'keyword',
@@ -13,11 +13,12 @@ describe('test facebook ads support', () => {
       })
     ).toMatchObject({
       source: 'facebookads',
-      medium: 'cpc',
+      medium: 'cpm',
       campaign: 'campaign',
       content: 'content',
       term: 'keyword',
-      fbclid: 'fbclid'
+      fbclid: 'fbclid',
+      channel: 'display'
     })
   })
 
@@ -29,7 +30,8 @@ describe('test facebook ads support', () => {
     ).toMatchObject({
       source: 'facebookads',
       medium: 'cpc',
-      fbclid: 'fbclid'
+      fbclid: 'fbclid',
+      channel: 'paid'
     })
   })
 
@@ -40,7 +42,8 @@ describe('test facebook ads support', () => {
       })
     ).toMatchObject({
       source: 'facebookads',
-      medium: 'cpc'
+      medium: 'cpc',
+      channel: 'paid'
     })
   })
 })

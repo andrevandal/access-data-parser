@@ -47,6 +47,7 @@ const accesData = function(queries) {
     referrer = /^(http|https):\/\//.test(referrer)
       ? referrer
       : `https://${referrer}`
+    medium = 'referral'
   }
 
   if (this.isGoogleAds) source = 'googleads'
@@ -86,6 +87,37 @@ const accesData = function(queries) {
     medium = '(not set)'
   }
 
+  let channel
+
+  switch (medium) {
+    case 'sm':
+      channel = 'social'
+      break
+    case '(not set)':
+      channel = 'direct'
+      break
+    case 'organic':
+      channel = 'organic'
+      break
+    case 'e-mail':
+    case 'email':
+      channel = 'email'
+      break
+    case 'cpc':
+    case 'ppc':
+    case 'paidsearch':
+      channel = 'paid'
+      break
+    case 'display':
+    case 'cpm':
+    case 'banner':
+      channel = 'display'
+      break
+    default:
+      channel = medium
+      break
+  }
+
   return pickBy({
     source,
     medium,
@@ -94,7 +126,8 @@ const accesData = function(queries) {
     term,
     fbclid,
     gclid,
-    referrer
+    referrer,
+    channel
   })
 }
 module.exports = accesData
