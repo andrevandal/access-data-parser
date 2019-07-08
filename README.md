@@ -40,6 +40,16 @@ console.log(new AccessData(queriesFromBrowser))
 */
 ```
 
+## Params Supported
+- source
+- medium
+- campaign
+- content
+- term
+- referrer
+- fbclid
+- gclid
+
 ## Contributing
 
 PRs accepted.
