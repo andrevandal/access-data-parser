@@ -27,14 +27,37 @@ const accesData = function(queries) {
     fbclid
   } = renameKeys(defaultQueryKeys, queries)
 
+  this.hasReferrer = !!referrer
   this.isGoogleAds = !!gclid || source === 'googleads'
   this.isFacebookAds = !!fbclid || source === 'facebookads'
+  this.isGoogleSearch = this.hasReferrer && referrer.match(/google.com/)
+  this.isBingSearch = this.hasReferrer && referrer.match(/bing.com/)
+  this.isDuckSearch = this.hasReferrer && referrer.match(/duckduckgo.com/)
+  this.isYahooSearch = this.hasReferrer && referrer.match(/search.yahoo.com/)
 
   if ((this.isGoogleAds || this.isFacebookAds) && !medium) medium = 'cpc'
+
+  if (this.hasReferrer) {
+    referrer = /^(http|https):\/\//.test(referrer)
+      ? referrer
+      : `https://${referrer}`
+  }
 
   if (this.isGoogleAds) source = 'googleads'
   else if (this.isFacebookAds) {
     source = 'facebookads'
+  } else if (this.isGoogleSearch) {
+    source = 'google'
+    medium = 'organic'
+  } else if (this.isBingSearch) {
+    source = 'bing'
+    medium = 'organic'
+  } else if (this.isDuckSearch) {
+    source = 'duckduckgo'
+    medium = 'organic'
+  } else if (this.isYahooSearch) {
+    source = 'yahoo'
+    medium = 'organic'
   }
 
   return pickBy({
