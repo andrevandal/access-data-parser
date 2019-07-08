@@ -35,6 +35,11 @@ const accesData = function(queries) {
   this.isDuckSearch = this.hasReferrer && referrer.match(/duckduckgo.com/)
   this.isYahooSearch = this.hasReferrer && referrer.match(/search.yahoo.com/)
 
+  this.isFacebookSocial = this.hasReferrer && referrer.match(/facebook.com/)
+  this.isInstagramSocial = this.hasReferrer && referrer.match(/instagram.com/)
+  this.isLinkedinSocial = this.hasReferrer && referrer.match(/linkedin.com/)
+  this.isYoutubeSocial = this.hasReferrer && referrer.match(/youtube.com/)
+
   if ((this.isGoogleAds || this.isFacebookAds) && !medium) medium = 'cpc'
 
   if (this.hasReferrer) {
@@ -58,6 +63,18 @@ const accesData = function(queries) {
   } else if (this.isYahooSearch) {
     source = 'yahoo'
     medium = 'organic'
+  } else if (this.isFacebookSocial) {
+    source = 'facebook'
+    medium = 'social'
+  } else if (this.isInstagramSocial) {
+    source = 'instagram'
+    medium = 'social'
+  } else if (this.isLinkedinSocial) {
+    source = 'linkedin'
+    medium = 'social'
+  } else if (this.isYoutubeSocial) {
+    source = 'youtube'
+    medium = 'social'
   }
 
   return pickBy({
