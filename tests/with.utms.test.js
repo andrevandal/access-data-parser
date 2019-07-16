@@ -45,7 +45,7 @@ describe('test rename props', () => {
         referral: 'referral'
       })
     ).toMatchObject({
-      referrer: 'https://referral',
+      referrer: 'referral',
       channel: 'referral'
     })
   })

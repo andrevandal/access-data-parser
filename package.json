@@ -40,6 +40,7 @@
   },
   "homepage": "https://github.com/derevandal/access-data-parser#readme",
   "dependencies": {
+    "is-url": "^1.2.4",
     "lodash.pickby": "^4.6.0"
   },
   "devDependencies": {
