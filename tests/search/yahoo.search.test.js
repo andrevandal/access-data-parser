@@ -76,29 +76,4 @@ describe('yahoo search support', () => {
       channel: 'organic'
     })
   })
-
-  test('referrer = br.search.yahoo.com', () => {
-    expect(
-      new AccessData({
-        referrer: 'br.search.yahoo.com'
-      })
-    ).toMatchObject({
-      source: 'yahoo',
-      medium: 'organic',
-      referrer: 'https://br.search.yahoo.com',
-      channel: 'organic'
-    })
-  })
-  test('referral = br.search.yahoo.com', () => {
-    expect(
-      new AccessData({
-        referral: 'br.search.yahoo.com'
-      })
-    ).toMatchObject({
-      source: 'yahoo',
-      medium: 'organic',
-      referrer: 'https://br.search.yahoo.com',
-      channel: 'organic'
-    })
-  })
 })
