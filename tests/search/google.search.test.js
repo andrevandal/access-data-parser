@@ -76,29 +76,4 @@ describe('google search support', () => {
       channel: 'organic'
     })
   })
-
-  test('referrer = google.com.br', () => {
-    expect(
-      new AccessData({
-        referrer: 'google.com.br'
-      })
-    ).toMatchObject({
-      source: 'google',
-      medium: 'organic',
-      referrer: 'https://google.com.br',
-      channel: 'organic'
-    })
-  })
-  test('referral = google.com.br', () => {
-    expect(
-      new AccessData({
-        referral: 'google.com.br'
-      })
-    ).toMatchObject({
-      source: 'google',
-      medium: 'organic',
-      referrer: 'https://google.com.br',
-      channel: 'organic'
-    })
-  })
 })

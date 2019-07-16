@@ -41,6 +41,7 @@ console.log(new AccessData(queriesFromBrowser))
 ```
 
 ## Params Supported
+
 - source
 - medium
 - campaign

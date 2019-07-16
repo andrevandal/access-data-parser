@@ -76,29 +76,4 @@ describe('bing search support', () => {
       channel: 'organic'
     })
   })
-
-  test('referrer = br.bing.com', () => {
-    expect(
-      new AccessData({
-        referrer: 'br.bing.com'
-      })
-    ).toMatchObject({
-      source: 'bing',
-      medium: 'organic',
-      referrer: 'https://br.bing.com',
-      channel: 'organic'
-    })
-  })
-  test('referral = br.bing.com', () => {
-    expect(
-      new AccessData({
-        referral: 'br.bing.com'
-      })
-    ).toMatchObject({
-      source: 'bing',
-      medium: 'organic',
-      referrer: 'https://br.bing.com',
-      channel: 'organic'
-    })
-  })
 })
