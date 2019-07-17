@@ -1,5 +1,6 @@
 # Access Data Parser
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fderevandal%2Faccess-data-parser.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fderevandal%2Faccess-data-parser?ref=badge_shield)
 
 [![GitHub issues](https://img.shields.io/github/issues/derevandal/access-data-parser.svg)](https://github.com/derevandal/access-data-parser/issues)
 [![GitHub stars](https://img.shields.io/github/stars/derevandal/access-data-parser.svg)](https://github.com/derevandal/access-data-parser/stargazers)
@@ -59,6 +60,9 @@ PRs accepted.
 ## License
 
 MIT © ANDRÉ VAN DAL
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fderevandal%2Faccess-data-parser.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fderevandal%2Faccess-data-parser?ref=badge_large)
 
 ## Contributors ✨
 
