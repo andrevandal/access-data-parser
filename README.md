@@ -19,18 +19,18 @@ yarn add access-data-parser
 ## Usage
 
 ```js
-const AccessData = require('access-data-parser')
+const AccessData = require("access-data-parser");
 
 const queriesFromBrowser = {
-  utm_source: '',
-  utm_medium: '',
-  utm_campaign: '',
-  utm_content: '',
-  utm_term: '',
-  referrer: 'https://google.com/'
-}
+  utm_source: "",
+  utm_medium: "",
+  utm_campaign: "",
+  utm_content: "",
+  utm_term: "",
+  referrer: "https://google.com/"
+};
 
-console.log(new AccessData(queriesFromBrowser))
+console.log(new AccessData(queriesFromBrowser));
 /* expected:
  {
    source: 'google',
@@ -51,6 +51,15 @@ console.log(new AccessData(queriesFromBrowser))
 - referrer
 - fbclid
 - gclid
+
+## Default Channels
+
+- direct
+- organic
+- social
+- paid
+- display
+- referral
 
 ## Contributing
 
