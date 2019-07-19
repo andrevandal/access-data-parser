@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="#contributors">
-    <img src="https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square" alt="All Contributors" />
+    <img src="https://img.shields.io/badge/all_contributors-1-orange.svg" alt="All Contributors" />
   </a>
   <a href="https://github.com/derevandal/access-data-parser/issues">
     <img src="https://img.shields.io/github/issues/derevandal/access-data-parser.svg" alt="GitHub issues" />
@@ -40,7 +40,7 @@
   </a>
   
   <a href="https://app.fossa.io/projects/git%2Bgithub.com%2Fderevandal%2Faccess-data-parser?ref=badge_shield">
-    <img src="https://app.fossa.io/api/projects/git%2Bgithub.com%2Fderevandal%2Faccess-data-parser.svg?type=shield)"  alt="FOSSA Status" />
+    <img src="https://app.fossa.io/api/projects/git%2Bgithub.com%2Fderevandal%2Faccess-data-parser.svg?type=shield"  alt="FOSSA Status" />
   </a>
 </p>
 
