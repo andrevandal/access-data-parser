@@ -8,6 +8,8 @@
 [![Build Status](https://travis-ci.org/derevandal/access-data-parser.svg?branch=master)](https://travis-ci.org/derevandal/access-data-parser)
 [![npm version](https://badge.fury.io/js/access-data-parser.svg)](https://badge.fury.io/js/access-data-parser)
 [![renovate enabled](https://badges.renovateapi.com/github/derevandal/access-data-parser)](https://renovatebot.com)
+[![dependencies status](https://david-dm.org/derevandal/access-data-parser.svg)](https://david-dm.org)
+
 
 This module will receive `document.referrer` and some query params to determine where access come from.
 
