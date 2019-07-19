@@ -105,9 +105,6 @@ PRs accepted.
 
 MIT © ANDRÉ VAN DAL
 
-
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fderevandal%2Faccess-data-parser.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fderevandal%2Faccess-data-parser?ref=badge_large)
-
 ## Contributors ✨
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
