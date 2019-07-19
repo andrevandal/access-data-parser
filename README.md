@@ -1,15 +1,50 @@
 # Access Data Parser
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fderevandal%2Faccess-data-parser.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fderevandal%2Faccess-data-parser?ref=badge_shield)
 
-[![GitHub issues](https://img.shields.io/github/issues/derevandal/access-data-parser.svg)](https://github.com/derevandal/access-data-parser/issues)
-[![GitHub stars](https://img.shields.io/github/stars/derevandal/access-data-parser.svg)](https://github.com/derevandal/access-data-parser/stargazers)
-[![GitHub license](https://img.shields.io/github/license/derevandal/access-data-parser.svg)](https://github.com/derevandal/access-data-parser/blob/master/LICENSE)
-[![Coverage Status](https://coveralls.io/repos/github/derevandal/access-data-parser/badge.svg?branch=master&kill_cache=1)](https://coveralls.io/github/derevandal/access-data-parser?branch=master)
-[![Build Status](https://travis-ci.org/derevandal/access-data-parser.svg?branch=master)](https://travis-ci.org/derevandal/access-data-parser)
-[![npm version](https://badge.fury.io/js/access-data-parser.svg)](https://badge.fury.io/js/access-data-parser)
+<p align="center">
+  <a href="#contributors">
+    <img src="https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square" alt="All Contributors" />
+  </a>
+  <a href="https://github.com/derevandal/access-data-parser/issues">
+    <img src="https://img.shields.io/github/issues/derevandal/access-data-parser.svg" alt="GitHub issues" />
+   </a>
+  <a href="https://github.com/derevandal/access-data-parser/stargazers">
+    <img src="https://img.shields.io/github/stars/derevandal/access-data-parser.svg" alt="GitHub stars" />
+  </a>
+  
+  <a href="https://github.com/derevandal/access-data-parser/blob/master/LICENSE">
+    <img src="https://img.shields.io/github/license/derevandal/access-data-parser.svg" alt="GitHub license" />
+  </a>
+  
+  <a href="https://travis-ci.org/derevandal/access-data-parser">
+    <img src="https://coveralls.io/repos/github/derevandal/access-data-parser/badge.svg?branch=master&kill_cache=1" alt="Build Status" />
+  </a>
+  
+  <a href="https://badge.fury.io/js/access-data-parser">
+    <img src="https://badge.fury.io/js/access-data-parser.svg" alt="npm version" />
+  </a>
+  
+  <a href="https://renovatebot.com">
+    <img src="https://badges.renovateapi.com/github/derevandal/access-data-parser" alt="renovate enabled" />
+  </a>
+    
+  <a href="https://david-dm.org/derevandal/access-data-parser" />
+    <img src="https://david-dm.org/derevandal/access-data-parser.svg" alt="Dependency Status" />
+  </a>
+  
+  <a href="https://david-dm.org/derevandal/access-data-parser/?type=dev">
+    <img src="https://david-dm.org/derevandal/access-data-parser/dev-status.svg" alt="Dev Dependency Status" />
+  </a>
 
-> This module will receive `document.referrer` and some query params to determine where access come from.
+  <a href="https://www.npmjs.com/package/access-data-parser">
+    <img src="https://img.shields.io/npm/dw/access-data-parser.svg" alt="npm downloads" />
+  </a>
+  
+  <a href="https://app.fossa.io/projects/git%2Bgithub.com%2Fderevandal%2Faccess-data-parser?ref=badge_shield">
+    <img src="https://app.fossa.io/api/projects/git%2Bgithub.com%2Fderevandal%2Faccess-data-parser.svg?type=shield)"  alt="FOSSA Status" />
+  </a>
+</p>
+
+This module will receive `document.referrer` and some query params to determine where access come from.
 
 ## Install
 
@@ -20,18 +55,18 @@ yarn add access-data-parser
 ## Usage
 
 ```js
-const AccessData = require('access-data-parser')
+const AccessData = require("access-data-parser");
 
 const queriesFromBrowser = {
-  utm_source: '',
-  utm_medium: '',
-  utm_campaign: '',
-  utm_content: '',
-  utm_term: '',
-  referrer: 'https://google.com/'
-}
+  utm_source: "",
+  utm_medium: "",
+  utm_campaign: "",
+  utm_content: "",
+  utm_term: "",
+  referrer: "https://google.com/"
+};
 
-console.log(new AccessData(queriesFromBrowser))
+console.log(new AccessData(queriesFromBrowser));
 /* expected:
  {
    source: 'google',
@@ -52,6 +87,15 @@ console.log(new AccessData(queriesFromBrowser))
 - referrer
 - fbclid
 - gclid
+
+## Default Channels
+
+- direct
+- organic
+- social
+- paid
+- display
+- referral
 
 ## Contributing
 
