@@ -1,15 +1,44 @@
 # Access Data Parser
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
-[![GitHub issues](https://img.shields.io/github/issues/derevandal/access-data-parser.svg)](https://github.com/derevandal/access-data-parser/issues)
-[![GitHub stars](https://img.shields.io/github/stars/derevandal/access-data-parser.svg)](https://github.com/derevandal/access-data-parser/stargazers)
-[![GitHub license](https://img.shields.io/github/license/derevandal/access-data-parser.svg)](https://github.com/derevandal/access-data-parser/blob/master/LICENSE)
-[![Coverage Status](https://coveralls.io/repos/github/derevandal/access-data-parser/badge.svg?branch=master&kill_cache=1)](https://coveralls.io/github/derevandal/access-data-parser?branch=master)
-[![Build Status](https://travis-ci.org/derevandal/access-data-parser.svg?branch=master)](https://travis-ci.org/derevandal/access-data-parser)
-[![npm version](https://badge.fury.io/js/access-data-parser.svg)](https://badge.fury.io/js/access-data-parser)
-[![renovate enabled](https://badges.renovateapi.com/github/derevandal/access-data-parser)](https://renovatebot.com)
-[![dependencies status](https://david-dm.org/derevandal/access-data-parser.svg)](https://david-dm.org)
+<p align="center">
+  <a href="#contributors">
+    <img src="https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square" alt="All Contributors">
+  </a>
+  <a href="https://github.com/derevandal/access-data-parser/issues">
+    <img src="https://img.shields.io/github/issues/derevandal/access-data-parser.svg" alt="GitHub issues">
+   </a>
+  <a href="https://github.com/derevandal/access-data-parser/stargazers">
+    <img src="https://img.shields.io/github/stars/derevandal/access-data-parser.svg" alt="GitHub stars">
+  </a>
+  
+  <a href="https://github.com/derevandal/access-data-parser/blob/master/LICENSE">
+    <img src="https://img.shields.io/github/license/derevandal/access-data-parser.svg" alt="GitHub license">
+  </a>
+  
+  <a href="https://travis-ci.org/derevandal/access-data-parser">
+    <img src="https://coveralls.io/repos/github/derevandal/access-data-parser/badge.svg?branch=master&kill_cache=1" alt="Build Status">
+  </a>
+  
+  <a href="https://badge.fury.io/js/access-data-parser">
+    <img src="https://badge.fury.io/js/access-data-parser.svg" alt="npm version">
+  </a>
+  
+  <a href="https://renovatebot.com">
+    <img src="https://badges.renovateapi.com/github/derevandal/access-data-parser" alt="renovate enabled">
+  </a>
+    
+  <a href="https://david-dm.org/derevandal/access-data-parser">
+    <img src="https://david-dm.org/derevandal/access-data-parser.svg" alt="Dependency Status">
+  </a>
+  
+  <a href="https://david-dm.org/derevandal/access-data-parser/?type=dev">
+    <img src="https://david-dm.org/derevandal/access-data-parser/dev-status.svg" alt="Dev Dependency Status">
+  </a>
 
+  <a href="https://www.npmjs.com/package/access-data-parser">
+    <img alt="npm" src="https://img.shields.io/npm/dw/access-data-parser.svg">
+  </a>
+</p>
 
 This module will receive `document.referrer` and some query params to determine where access come from.
 
