@@ -6,7 +6,7 @@
 [![GitHub license](https://img.shields.io/github/license/derevandal/access-data-parser.svg)](https://github.com/derevandal/access-data-parser/blob/master/LICENSE)
 [![Coverage Status](https://coveralls.io/repos/github/derevandal/access-data-parser/badge.svg?branch=master&kill_cache=1)](https://coveralls.io/github/derevandal/access-data-parser?branch=master)
 [![Build Status](https://travis-ci.org/derevandal/access-data-parser.svg?branch=master)](https://travis-ci.org/derevandal/access-data-parser)
-[![npm version](https://badge.fury.io/js/access-data-parser.svg)](https://badge.fury.io/js/access-data-parser)
+[![npm version](https://badge.fury.io/js/access-data-parser.svg)](https://badge.fury.io/js/access-data-parser) [![Greenkeeper badge](https://badges.greenkeeper.io/derevandal/access-data-parser.svg)](https://greenkeeper.io/)
 
 > This module will receive `document.referrer` and some query params to determine where access come from.
 
