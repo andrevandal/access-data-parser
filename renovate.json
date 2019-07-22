@@ -2,7 +2,7 @@
   "extends": [
     "config:base"
   ],
-  "assignees": "derevandal",
+  "assignees": ["derevandal"],
   "packageRules": [
     {
       "depTypeList": [
