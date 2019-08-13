@@ -26,8 +26,8 @@
   <a href="https://codecov.io/gh/derevandal/access-data-parser">
     <img src="https://codecov.io/gh/derevandal/access-data-parser/branch/master/graph/badge.svg" />
   </a>  
-  <a href="https://requires.io/github/derevandal/access-data-parser/requirements/?branch=feature%2Fcodecov-support">
-    <img src="https://requires.io/github/derevandal/access-data-parser/requirements.svg?branch=feature%2Fcodecov-support" alt="Requirements Status" />
+  <a href="https://requires.io/github/derevandal/access-data-parser/requirements/?branch=master>
+    <img src="https://requires.io/github/derevandal/access-data-parser/requirements.svg?branch=master" alt="Requirements Status" />
   </a>  
   <a href="https://github.com/derevandal/access-data-parser/blob/master/LICENSE">
     <img src="https://img.shields.io/github/license/derevandal/access-data-parser?color=%234c1" alt="GitHub license" />
