@@ -26,13 +26,9 @@
   <a href="https://renovatebot.com">
     <img src="https://badges.renovateapi.com/github/derevandal/access-data-parser" alt="renovate enabled" />
   </a>
-    
-  <a href="https://david-dm.org/derevandal/access-data-parser" />
-    <img src="https://david-dm.org/derevandal/access-data-parser.svg" alt="Dependency Status" />
-  </a>
-  
-  <a href="https://david-dm.org/derevandal/access-data-parser/?type=dev">
-    <img src="https://david-dm.org/derevandal/access-data-parser/dev-status.svg" alt="Dev Dependency Status" />
+
+  <a href="https://requires.io/github/derevandal/access-data-parser/requirements/?branch=feature%2Fcodecov-support">
+    <img src="https://requires.io/github/derevandal/access-data-parser/requirements.svg?branch=feature%2Fcodecov-support" alt="Requirements Status" />
   </a>
 
   <a href="https://www.npmjs.com/package/access-data-parser">
