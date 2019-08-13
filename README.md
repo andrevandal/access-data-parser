@@ -1,40 +1,37 @@
 # Access Data Parser
 
 <p align="center">
-  <a href="#contributors">
-    <img src="https://img.shields.io/badge/all_contributors-1-orange.svg" alt="All Contributors" />
-  </a>
   <a href="https://github.com/derevandal/access-data-parser/issues">
     <img src="https://img.shields.io/github/issues/derevandal/access-data-parser.svg" alt="GitHub issues" />
    </a>
   <a href="https://github.com/derevandal/access-data-parser/stargazers">
-    <img src="https://img.shields.io/github/stars/derevandal/access-data-parser.svg" alt="GitHub stars" />
+    <img src="https://img.shields.io/github/stars/derevandal/access-data-parser.svg?color=%234c1" alt="GitHub stars" />
+  </a>  
+  <a href="#contributors">
+    <img src="https://img.shields.io/badge/all_contributors-1-orange.svg?color=%234c1" alt="All Contributors" />
   </a>
-  
-  <a href="https://github.com/derevandal/access-data-parser/blob/master/LICENSE">
-    <img src="https://img.shields.io/github/license/derevandal/access-data-parser.svg" alt="GitHub license" />
-  </a>
-  
-  <a href="https://travis-ci.org/derevandal/access-data-parser">
-    <img src="https://coveralls.io/repos/github/derevandal/access-data-parser/badge.svg?branch=master&kill_cache=1" alt="Build Status" />
-  </a>
-  
   <a href="https://badge.fury.io/js/access-data-parser">
     <img src="https://badge.fury.io/js/access-data-parser.svg" alt="npm version" />
   </a>
-  
-  <a href="https://renovatebot.com">
-    <img src="https://badges.renovateapi.com/github/derevandal/access-data-parser" alt="renovate enabled" />
-  </a>
-
-  <a href="https://requires.io/github/derevandal/access-data-parser/requirements/?branch=feature%2Fcodecov-support">
-    <img src="https://requires.io/github/derevandal/access-data-parser/requirements.svg?branch=feature%2Fcodecov-support" alt="Requirements Status" />
-  </a>
-
   <a href="https://www.npmjs.com/package/access-data-parser">
     <img src="https://img.shields.io/npm/dw/access-data-parser.svg" alt="npm downloads" />
   </a>
-  
+
+  <a href="https://renovatebot.com">
+    <img src="https://img.shields.io/badge/renovate-enabled-brightgreen.svg" alt="renovate enabled" />
+  </a>
+  <a href="https://travis-ci.org/derevandal/access-data-parser">
+    <img alt="Travis (.org) branch" src="https://img.shields.io/travis/derevandal/access-data-parser/master">
+  </a>  
+  <a href="https://codecov.io/gh/derevandal/access-data-parser">
+    <img src="https://codecov.io/gh/derevandal/access-data-parser/branch/master/graph/badge.svg" />
+  </a>  
+  <a href="https://requires.io/github/derevandal/access-data-parser/requirements/?branch=feature%2Fcodecov-support">
+    <img src="https://requires.io/github/derevandal/access-data-parser/requirements.svg?branch=feature%2Fcodecov-support" alt="Requirements Status" />
+  </a>  
+  <a href="https://github.com/derevandal/access-data-parser/blob/master/LICENSE">
+    <img src="https://img.shields.io/github/license/derevandal/access-data-parser?color=%234c1" alt="GitHub license" />
+  </a>
   <a href="https://app.fossa.io/projects/git%2Bgithub.com%2Fderevandal%2Faccess-data-parser?ref=badge_shield">
     <img src="https://app.fossa.io/api/projects/git%2Bgithub.com%2Fderevandal%2Faccess-data-parser.svg?type=shield"  alt="FOSSA Status" />
   </a>
