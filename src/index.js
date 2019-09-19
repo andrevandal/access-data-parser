@@ -1,5 +1,5 @@
 const renameKeys = require('./lib/renameKeys')
-const pickBy = require('lodash/pickby')
+const removeEmpty = require('./lib/removeEmpty')
 
 const parseReferrer = require('./lib/parseReferrer')
 const checkChannel = require('./lib/checkChannel')
@@ -54,6 +54,6 @@ const accesData = function(queries) {
       channel: checkChannel(medium)
     }
   }
-  return pickBy({ ...queries, channel: checkChannel(queries.medium) })
+  return removeEmpty({ ...queries, channel: checkChannel(queries.medium) })
 }
 module.exports = accesData
