@@ -6,7 +6,7 @@ jobs:
   include:
     - stage: Produce Coverage
       node_js: node
-      install:
-        - npm install -g jest codecov
+      before_install:
+        - npm install -g codecov
       script:
         - jest && codecov
