@@ -4,7 +4,6 @@
   "description": "This module will receive `document.referrer` and some query params to determine where access come from.",
   "main": "src/index.js",
   "scripts": {
-    "coverage": "jest && codecov",
     "test": "jest",
     "lint": "eslint --ext .js --ignore-path .gitignore .",
     "lintfix": "eslint --fix --ext .js, --ignore-path .gitignore ."
@@ -41,7 +40,8 @@
   },
   "homepage": "https://github.com/derevandal/access-data-parser#readme",
   "dependencies": {
-    "is-url": "^1.2.4"
+    "is-url": "^1.2.4",
+    "lodash-es": "^4.17.15"
   },
   "devDependencies": {
     "eslint": "6.3.0",
