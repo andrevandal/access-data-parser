@@ -1,5 +1,5 @@
 const renameKeys = require('./lib/renameKeys')
-const pickBy = require('lodash.pickby')
+const pickBy = require('lodash/pickby')
 
 const parseReferrer = require('./lib/parseReferrer')
 const checkChannel = require('./lib/checkChannel')
