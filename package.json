@@ -44,7 +44,7 @@
     "lodash.pickby": "^4.6.0"
   },
   "devDependencies": {
-    "eslint": "7.12.0",
+    "eslint": "7.12.1",
     "eslint-config-prettier": "6.14.0",
     "eslint-config-prettier-standard": "3.0.1",
     "eslint-config-standard": "15.0.0",
