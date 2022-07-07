@@ -1,6 +1,9 @@
-const parseReferrer = require('./parseReferrer')
+import { describe, expect, test } from 'vitest';
 
-const referrerTypes = require('../configs/referrerTypes')
+import parseReferrer from './parseReferrer'
+import referrerTypes from '../configs/referrerTypes'
+
+
 const randomString = Math.random()
   .toString(36)
   .substring(7)

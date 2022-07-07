@@ -1,4 +1,6 @@
-const AccessData = require('../src/index')
+import AccessData from '../src/index'
+
+import { describe, expect, test } from 'vitest';
 
 describe('test rename props', () => {
   test('utm_source like to source', () => {

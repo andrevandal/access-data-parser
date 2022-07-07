@@ -1,5 +1,6 @@
-const AccessData = require('../../src/index')
+import AccessData from '../../src/index'
 
+import { describe, expect, test } from 'vitest';
 describe('facebook search support', () => {
   test('referrer = https://facebook.com', () => {
     expect(

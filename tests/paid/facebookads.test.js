@@ -1,4 +1,6 @@
-const AccessData = require('../../src/index')
+import AccessData from '../../src/index'
+
+import { describe, expect, test } from 'vitest';
 
 describe('test facebook ads support', () => {
   test('complete UTMs', () => {

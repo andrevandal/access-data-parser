@@ -3,15 +3,17 @@
   "version": "1.5.0",
   "description": "This module will receive `document.referrer` and some query params to determine where access come from.",
   "main": "src/index.js",
+  "type": "module",
   "scripts": {
-    "test": "jest",
-    "lint": "eslint --ext .js --ignore-path .gitignore .",
-    "lintfix": "eslint --fix --ext .js, --ignore-path .gitignore ."
+    "build": "vite build",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:run": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "prepare": "husky install"
   },
-  "husky": {
-    "hooks": {
-      "pre-push": "npm test"
-    }
+  "engines": {
+    "node": ">=18"
   },
   "repository": {
     "type": "git",
@@ -44,19 +46,8 @@
     "lodash.pickby": "^4.6.0"
   },
   "devDependencies": {
-    "eslint": "7.31.0",
-    "eslint-config-prettier": "8.3.0",
-    "eslint-config-prettier-standard": "4.0.1",
-    "eslint-config-standard": "16.0.3",
-    "eslint-plugin-import": "2.23.4",
-    "eslint-plugin-jest": "24.3.6",
-    "eslint-plugin-node": "11.1.0",
-    "eslint-plugin-prettier": "3.4.0",
-    "eslint-plugin-promise": "5.1.0",
-    "eslint-plugin-standard": "4.1.0",
-    "husky": "7.0.1",
-    "jest": "27.0.6",
-    "prettier": "2.3.2",
-    "prettier-config-standard": "4.0.0"
+    "husky": "8.0.1",
+    "vite": "^2.9.13",
+    "vitest": "^0.17.0"
   }
 }

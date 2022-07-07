@@ -1,5 +1,5 @@
-const referrerTypes = require('../configs/referrerTypes')
-const isUrl = require('is-url')
+import referrerTypes from '../configs/referrerTypes'
+import isUrl from 'is-url'
 
 const parseReferrer = referrer => {
   const findType = referrerTypes.find(type => referrer.match(type.regex))
@@ -10,4 +10,4 @@ const parseReferrer = referrer => {
   }
 }
 
-module.exports = parseReferrer
+export default parseReferrer

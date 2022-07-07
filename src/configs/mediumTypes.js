@@ -1,4 +1,4 @@
-module.exports = [
+export default [
   { id: 'sm', channel: 'social' },
   { id: '(not set)', channel: 'direct' },
   { id: 'e-mail', channel: 'email' },

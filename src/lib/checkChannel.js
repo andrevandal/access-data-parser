@@ -1,6 +1,6 @@
-const mediumTypes = require('../configs/mediumTypes')
+import mediumTypes from '../configs/mediumTypes'
 
-module.exports = medium => {
+export default medium => {
   const findType = mediumTypes.find(type => type.id === medium)
   return findType ? findType.channel : medium
 }

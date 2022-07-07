@@ -1,4 +1,4 @@
-module.exports = [
+export default [
   { regex: /google.com/, source: 'google', medium: 'organic' },
   { regex: /bing.com/, source: 'bing', medium: 'organic' },
   { regex: /duckduckgo.com/, source: 'duckduckgo', medium: 'organic' },

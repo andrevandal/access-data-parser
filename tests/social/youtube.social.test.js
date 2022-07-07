@@ -1,5 +1,6 @@
-const AccessData = require('../../src/index')
+import AccessData from '../../src/index'
 
+import { describe, expect, test } from 'vitest';
 describe('youtube search support', () => {
   test('referrer = https://youtube.com', () => {
     expect(

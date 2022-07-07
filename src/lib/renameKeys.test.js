@@ -1,4 +1,6 @@
-const renameKeys = require('./renameKeys')
+import { describe, expect, test } from 'vitest';
+import renameKeys from './renameKeys'
+
 describe('renameKeys', () => {
   test('A to B', () => {
     expect(renameKeys({ A: 'B' }, { A: 'B' })).toMatchObject({ B: 'B' })

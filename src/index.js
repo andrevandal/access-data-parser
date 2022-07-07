@@ -1,8 +1,7 @@
-const renameKeys = require('./lib/renameKeys')
-const pickBy = require('lodash.pickby')
-
-const parseReferrer = require('./lib/parseReferrer')
-const checkChannel = require('./lib/checkChannel')
+import renameKeys from './lib/renameKeys'
+import pickBy from './lib/pickBy'
+import parseReferrer from './lib/parseReferrer'
+import checkChannel from './lib/checkChannel'
 
 const defaultQueryKeys = {
   utm_source: 'source',
@@ -56,4 +55,5 @@ const accesData = function(queries) {
   }
   return pickBy({ ...queries, channel: checkChannel(queries.medium) })
 }
-module.exports = accesData
+
+export default accesData

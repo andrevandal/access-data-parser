@@ -1,6 +1,7 @@
-const checkChannel = require('./checkChannel')
+import { describe, expect, test } from 'vitest';
+import checkChannel from './checkChannel'
+import mediumTypes from '../configs/mediumTypes'
 
-const mediumTypes = require('../configs/mediumTypes')
 const randomString = Math.random()
   .toString(36)
   .substring(7)

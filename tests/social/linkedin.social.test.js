@@ -1,5 +1,6 @@
-const AccessData = require('../../src/index')
+import AccessData from '../../src/index'
 
+import { describe, expect, test } from 'vitest';
 describe('linkedin search support', () => {
   test('referrer = https://www.linkedin.com', () => {
     expect(
