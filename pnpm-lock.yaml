@@ -3,13 +3,11 @@ lockfileVersion: 5.4
 specifiers:
   husky: 8.0.1
   is-url: ^1.2.4
-  lodash.pickby: ^4.6.0
   vite: ^2.9.13
   vitest: ^0.17.0
 
 dependencies:
   is-url: 1.2.4
-  lodash.pickby: 4.6.0
 
 devDependencies:
   husky: 8.0.1
@@ -323,10 +321,6 @@ packages:
     resolution: {integrity: sha512-lL87ytIGP2FU5PWwNDo0w3WhIo2gopIAxPg9RxDYF7m4rr5ahuZxP22xnJHIvaLTe4Z9P6uKKY2UHiwyB4pcrw==}
     engines: {node: '>=14'}
     dev: true
-
-  /lodash.pickby/4.6.0:
-    resolution: {integrity: sha512-AZV+GsS/6ckvPOVQPXSiFFacKvKB4kOQu6ynt9wz0F3LO4R9Ij4K1ddYsIytDpSgLz88JHd9P+oaLeej5/Sl7Q==}
-    dev: false
 
   /loupe/2.3.4:
     resolution: {integrity: sha512-OvKfgCC2Ndby6aSTREl5aCCPTNIzlDfQZvZxNUrBrihDhL3xcrYegTblhmEiCrg2kKQz4XsFIaemE5BF4ybSaQ==}
