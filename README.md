@@ -57,7 +57,7 @@ yarn add access-data-parser
 ## Usage
 
 ```js
-const AccessData = require("access-data-parser");
+import AccessData from 'access-data-parser'
 
 const queriesFromBrowser = {
   utm_source: "",
