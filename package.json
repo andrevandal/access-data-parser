@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "build": "vite build",
+    "dev": "nodemon --exec ts-node --transpile-only --files ./src/index.ts --ignore ./tests",
     "test": "vitest",
     "test:ui": "vitest --ui",
     "test:run": "vitest run",
@@ -45,6 +46,7 @@
     "is-url": "^1.2.4"
   },
   "devDependencies": {
+    "@types/node": "^18.0.3",
     "@typescript-eslint/eslint-plugin": "^5.30.5",
     "@typescript-eslint/parser": "^5.30.5",
     "eslint": "^8.19.0",
@@ -52,6 +54,8 @@
     "eslint-import-resolver-typescript": "^3.2.5",
     "eslint-plugin-import": "^2.25.2",
     "husky": "8.0.1",
+    "nodemon": "^2.0.19",
+    "ts-node": "^10.8.2",
     "typescript": "*",
     "vite": "^2.9.13",
     "vitest": "^0.17.0"

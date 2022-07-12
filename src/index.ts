@@ -3,7 +3,21 @@ import pickBy from './lib/pickBy'
 import parseReferrer from './lib/parseReferrer'
 import checkChannel from './lib/checkChannel'
 
-const defaultQueryKeys = {
+interface defaultQueryKeysProps {
+  utm_source: string,
+  utm_medium: string,
+  utm_campaign: string,
+  utm_content: string,
+  utm_term: string,
+  utmSource: string,
+  utmMedium: string,
+  utmCampaign: string,
+  utmContent: string,
+  utmTerm: string,
+  referral: string
+}
+
+const defaultQueryKeys: defaultQueryKeysProps = {
   utm_source: 'source',
   utm_medium: 'medium',
   utm_campaign: 'campaign',

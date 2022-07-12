@@ -1,7 +1,9 @@
 import referrerTypes from '../configs/referrerTypes'
 import isUrl from 'is-url'
 
-const parseReferrer = referrer => {
+type teste = RegExp | string
+
+const parseReferrer = (referrer) => {
   const findType = referrerTypes.find(type => referrer.match(type.regex))
   if (findType) return findType
   return {

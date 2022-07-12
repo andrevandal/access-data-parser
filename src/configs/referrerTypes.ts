@@ -1,4 +1,8 @@
-export default [
+const regexSourceMedium : {
+  regex: RegExp,
+  source: string,
+  medium: string
+}[] = [
   { regex: /google.com/, source: 'google', medium: 'organic' },
   { regex: /bing.com/, source: 'bing', medium: 'organic' },
   { regex: /duckduckgo.com/, source: 'duckduckgo', medium: 'organic' },
@@ -8,3 +12,5 @@ export default [
   { regex: /linkedin.com/, source: 'linkedin', medium: 'social' },
   { regex: /youtube.com/, source: 'youtube', medium: 'social' }
 ]
+
+export default regexSourceMedium

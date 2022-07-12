@@ -1,4 +1,7 @@
-export default [
+const idAndChannel : {
+  id: string,
+  channel: string
+}[] = [
   { id: 'sm', channel: 'social' },
   { id: '(not set)', channel: 'direct' },
   { id: 'e-mail', channel: 'email' },
@@ -8,3 +11,5 @@ export default [
   { id: 'cpm', channel: 'display' },
   { id: 'banner', channel: 'display' }
 ]
+
+export default idAndChannel
