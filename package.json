@@ -2,11 +2,29 @@
   "name": "access-data-parser",
   "version": "1.5.0",
   "description": "This module will receive `document.referrer` and some query params to determine where access come from.",
-  "main": "src/index.js",
   "type": "module",
+  "files": [
+    "dist"
+  ],
+  "module": "./dist/access-data-parser.es.js",
+  "main": "./dist/access-data-parser.cjs.js",
+  "types": "./types.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/access-data-parser.es.js ",
+      "require": "./dist/access-data-parser.cjs.js",
+      "browser": {
+        "default": "./dist/access-data-parser.iife.js"
+      },
+      "types": "./dist/access-data-parser.d.ts"
+    }
+  },
   "scripts": {
+    "start": "vite-node src/index.ts",
+    "dev": "vite-node src/index.ts -w",
     "build": "vite build",
-    "dev": "nodemon --exec ts-node --transpile-only --files ./src/index.ts --ignore ./tests",
+    "build:types": "tsc --project tsconfig.json",
+    "build:types:trace": "tsc --project tsconfig.json --traceResolution",
     "test": "vitest",
     "test:ui": "vitest --ui",
     "test:run": "vitest run",
@@ -46,6 +64,7 @@
     "is-url": "^1.2.4"
   },
   "devDependencies": {
+    "@types/is-url": "^1.2.30",
     "@types/node": "^18.0.3",
     "@typescript-eslint/eslint-plugin": "^5.30.5",
     "@typescript-eslint/parser": "^5.30.5",
@@ -54,10 +73,17 @@
     "eslint-import-resolver-typescript": "^3.2.5",
     "eslint-plugin-import": "^2.25.2",
     "husky": "8.0.1",
-    "nodemon": "^2.0.19",
-    "ts-node": "^10.8.2",
-    "typescript": "*",
+    "typescript": "^4.7.4",
     "vite": "^2.9.14",
+    "vite-node": "^0.18.0",
+    "vite-tsconfig-paths": "^3.5.0",
     "vitest": "^0.17.0"
+  },
+  "typesVersions": {
+    ">=4.7": {
+      "*": [
+        "ts4.7/*"
+      ]
+    }
   }
 }

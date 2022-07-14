@@ -1,4 +1,4 @@
-export default (keysMap, obj) =>
+export default (keysMap:any, obj:any) =>
 Object.keys(obj).reduce(
   (acc, key) => ({
     ...acc,

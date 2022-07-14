@@ -1,7 +1,4 @@
-const idAndChannel : {
-  id: string,
-  channel: string
-}[] = [
+const idAndChannel = [
   { id: 'sm', channel: 'social' },
   { id: '(not set)', channel: 'direct' },
   { id: 'e-mail', channel: 'email' },

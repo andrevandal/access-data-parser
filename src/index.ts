@@ -1,21 +1,9 @@
-import renameKeys from './lib/renameKeys'
-import pickBy from './lib/pickBy'
-import parseReferrer from './lib/parseReferrer'
-import checkChannel from './lib/checkChannel'
+import { defaultQueryKeysProps, accesDataParams }  from "@/types.js"
+import renameKeys from '@/lib/renameKeys.js'
+import pickBy from '@/lib/pickBy.js'
+import parseReferrer from '@/lib/parseReferrer.js'
+import checkChannel from '@/lib/checkChannel.js'
 
-interface defaultQueryKeysProps {
-  utm_source: string,
-  utm_medium: string,
-  utm_campaign: string,
-  utm_content: string,
-  utm_term: string,
-  utmSource: string,
-  utmMedium: string,
-  utmCampaign: string,
-  utmContent: string,
-  utmTerm: string,
-  referral: string
-}
 
 const defaultQueryKeys: defaultQueryKeysProps = {
   utm_source: 'source',
@@ -31,29 +19,30 @@ const defaultQueryKeys: defaultQueryKeysProps = {
   referral: 'referrer'
 }
 
-const accesData = function(queries) {
-  queries = { ...renameKeys(defaultQueryKeys, queries) }
+const accesData = function(oldQueries: defaultQueryKeysProps) {
+  const queries = { ...renameKeys(defaultQueryKeys, oldQueries) } as accesDataParams
 
-  this.isGoogleAds = !!queries.gclid || queries.source === 'googleads'
-  this.isFacebookAds = !!queries.fbclid || queries.source === 'facebookads'
-  this.isDirectAccess =
+  const isGoogleAds = !!queries.gclid || queries.source === 'googleads'
+  const isFacebookAds = !!queries.fbclid || queries.source === 'facebookads'
+  const isDirectAccess =
     !queries.source &&
     !queries.referrer &&
-    !this.isFacebookAds &&
-    !this.isGoogleAds
+    !isFacebookAds &&
+    !isGoogleAds
 
-  if (this.isDirectAccess)
+  if (isDirectAccess)
     return {
       source: 'direct',
       medium: '(not set)',
       channel: 'direct'
     }
 
-  if (this.isGoogleAds || this.isFacebookAds) {
+
+  if (isGoogleAds || isFacebookAds) {
     if (!queries.medium) queries.medium = 'cpc'
     return {
       ...queries,
-      source: this.isGoogleAds ? 'googleads' : 'facebookads',
+      source: isGoogleAds ? 'googleads' : 'facebookads',
       channel: checkChannel(queries.medium)
     }
   }
