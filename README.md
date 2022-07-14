@@ -39,19 +39,10 @@
 
 This module will receive `document.referrer` and some query params to determine where access come from.
 
-## To Do 
-
-- [] Add eslint support
-- [] Add prettier support
-- [] Refactor codebase into Typescript
-- [] Allow Typescript types export automatically
-- [] Use Vite bundler (https://vitejs.dev/guide/build.html#library-mode)
-- [] Add Github Action to run coverage tests
-
 ## Install
 
 ```bash
-yarn add access-data-parser
+pnpm add access-data-parser
 ```
 
 ## Usage
