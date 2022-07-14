@@ -1,5 +1,9 @@
 {
   "github": {
     "release": true
+  },
+  "npm": {
+    "publishPath": "dist/",
+    "access": "public"
   }
 }

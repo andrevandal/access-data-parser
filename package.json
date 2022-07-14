@@ -31,7 +31,7 @@
     "test:coverage": "vitest run --coverage",
     "lint": "eslint . ",
     "prepare": "husky install",
-    "release": "release-it"
+    "release": "release-it --npm.pnpm"
   },
   "engines": {
     "node": ">=18"
