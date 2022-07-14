@@ -6,7 +6,7 @@ const idAndChannel = [
   { id: 'ppc', channel: 'paid' },
   { id: 'paidsearch', channel: 'paid' },
   { id: 'cpm', channel: 'display' },
-  { id: 'banner', channel: 'display' }
+  { id: 'banner', channel: 'display' },
 ]
 
 export default idAndChannel

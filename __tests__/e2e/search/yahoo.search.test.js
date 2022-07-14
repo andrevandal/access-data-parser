@@ -1,80 +1,81 @@
 import AccessData from '@/index.ts'
 
-import { describe, expect, test } from 'vitest';
+import { describe, expect, test } from 'vitest'
+
 describe('yahoo search support', () => {
   test('referrer = https://search.yahoo.com', () => {
     expect(
       new AccessData({
-        referrer: 'https://search.yahoo.com'
+        referrer: 'https://search.yahoo.com',
       })
     ).toMatchObject({
       source: 'yahoo',
       medium: 'organic',
       referrer: 'https://search.yahoo.com',
-      channel: 'organic'
+      channel: 'organic',
     })
   })
 
   test('referral = https://search.yahoo.com', () => {
     expect(
       new AccessData({
-        referral: 'https://search.yahoo.com'
+        referral: 'https://search.yahoo.com',
       })
     ).toMatchObject({
       source: 'yahoo',
       medium: 'organic',
       referrer: 'https://search.yahoo.com',
-      channel: 'organic'
+      channel: 'organic',
     })
   })
 
   test('referrer = http://search.yahoo.com', () => {
     expect(
       new AccessData({
-        referrer: 'http://search.yahoo.com'
+        referrer: 'http://search.yahoo.com',
       })
     ).toMatchObject({
       source: 'yahoo',
       medium: 'organic',
       referrer: 'http://search.yahoo.com',
-      channel: 'organic'
+      channel: 'organic',
     })
   })
   test('referral = http://search.yahoo.com', () => {
     expect(
       new AccessData({
-        referral: 'http://search.yahoo.com'
+        referral: 'http://search.yahoo.com',
       })
     ).toMatchObject({
       source: 'yahoo',
       medium: 'organic',
       referrer: 'http://search.yahoo.com',
-      channel: 'organic'
+      channel: 'organic',
     })
   })
 
   test('referrer = https://br.search.yahoo.com', () => {
     expect(
       new AccessData({
-        referrer: 'https://br.search.yahoo.com'
+        referrer: 'https://br.search.yahoo.com',
       })
     ).toMatchObject({
       source: 'yahoo',
       medium: 'organic',
       referrer: 'https://br.search.yahoo.com',
-      channel: 'organic'
+      channel: 'organic',
     })
   })
   test('referral = https://br.search.yahoo.com', () => {
     expect(
       new AccessData({
-        referral: 'https://br.search.yahoo.com'
+        referral: 'https://br.search.yahoo.com',
       })
     ).toMatchObject({
       source: 'yahoo',
       medium: 'organic',
       referrer: 'https://br.search.yahoo.com',
-      channel: 'organic'
+      channel: 'organic',
     })
   })
 })

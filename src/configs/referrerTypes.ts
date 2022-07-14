@@ -6,7 +6,7 @@ const regexSourceMedium = [
   { regex: /facebook.com/, source: 'facebook', medium: 'social' },
   { regex: /instagram.com/, source: 'instagram', medium: 'social' },
   { regex: /linkedin.com/, source: 'linkedin', medium: 'social' },
-  { regex: /youtube.com/, source: 'youtube', medium: 'social' }
+  { regex: /youtube.com/, source: 'youtube', medium: 'social' },
 ]
 
 export default regexSourceMedium

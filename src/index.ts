@@ -1,9 +1,12 @@
-import { defaultQueryKeysProps, accesDataParams }  from "@/types.js"
+import {
+  defaultQueryKeysProps,
+  accessDataParams,
+  accessDataResponse,
+} from '@/types.js'
 import renameKeys from '@/lib/renameKeys.js'
 import pickBy from '@/lib/pickBy.js'
 import parseReferrer from '@/lib/parseReferrer.js'
 import checkChannel from '@/lib/checkChannel.js'
-
 
 const defaultQueryKeys: defaultQueryKeysProps = {
   utm_source: 'source',
@@ -16,34 +19,32 @@ const defaultQueryKeys: defaultQueryKeysProps = {
   utmCampaign: 'campaign',
   utmContent: 'content',
   utmTerm: 'term',
-  referral: 'referrer'
+  referral: 'referrer',
 }
 
-const accesData = function(oldQueries: defaultQueryKeysProps) {
-  const queries = { ...renameKeys(defaultQueryKeys, oldQueries) } as accesDataParams
+function accessData(oldQueries: defaultQueryKeysProps) {
+  const queries = {
+    ...renameKeys(defaultQueryKeys, oldQueries),
+  } as accessDataParams
 
   const isGoogleAds = !!queries.gclid || queries.source === 'googleads'
   const isFacebookAds = !!queries.fbclid || queries.source === 'facebookads'
   const isDirectAccess =
-    !queries.source &&
-    !queries.referrer &&
-    !isFacebookAds &&
-    !isGoogleAds
+    !queries.source && !queries.referrer && !isFacebookAds && !isGoogleAds
 
   if (isDirectAccess)
     return {
       source: 'direct',
       medium: '(not set)',
-      channel: 'direct'
+      channel: 'direct',
     }
-
 
   if (isGoogleAds || isFacebookAds) {
     if (!queries.medium) queries.medium = 'cpc'
     return {
       ...queries,
       source: isGoogleAds ? 'googleads' : 'facebookads',
-      channel: checkChannel(queries.medium)
+      channel: checkChannel(queries.medium),
     }
   }
 
@@ -51,12 +52,15 @@ const accesData = function(oldQueries: defaultQueryKeysProps) {
     const { source, medium } = parseReferrer(queries.referrer)
     return {
       ...queries,
-      source: source,
-      medium: medium,
-      channel: checkChannel(medium)
+      source,
+      medium,
+      channel: checkChannel(medium),
     }
   }
-  return pickBy({ ...queries, channel: checkChannel(queries.medium) })
+  return pickBy({
+    ...queries,
+    channel: checkChannel(queries.medium),
+  }) as accessDataResponse
 }
 
-export default accesData
+export default accessData

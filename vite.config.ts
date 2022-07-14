@@ -4,6 +4,7 @@
 
 import { defineConfig } from 'vite'
 import path from 'path'
+// eslint-disable-next-line import/no-extraneous-dependencies
 import tsconfigPaths from 'vite-tsconfig-paths'
 
 export default defineConfig({
@@ -12,19 +13,17 @@ export default defineConfig({
       formats: ['es', 'cjs', 'umd', 'iife'],
       entry: path.resolve(__dirname, 'src/index.ts'),
       name: 'AccessDataParser',
-      fileName: (format) => `access-data-parser.${format}.js`
+      fileName: (format) => `access-data-parser.${format}.js`,
     },
   },
-  resolve:{
-    alias:{
-      '@' : path.resolve(__dirname, './src')
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src'),
     },
   },
   test: {
     /* for example, use global to avoid globals imports (describe, test, expect): */
     // globals: true,
   },
-  plugins:[
-    tsconfigPaths
-  ]
+  plugins: [tsconfigPaths],
 })

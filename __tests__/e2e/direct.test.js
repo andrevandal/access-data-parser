@@ -1,29 +1,29 @@
 import AccessData from '@/index.ts'
 
-import { describe, expect, test } from 'vitest';
+import { describe, expect, test } from 'vitest'
 
 describe('direct access support', () => {
   test('without referrer', () => {
     expect(
       new AccessData({
-        referrer: ''
+        referrer: '',
       })
     ).toMatchObject({
       channel: 'direct',
       source: 'direct',
-      medium: '(not set)'
+      medium: '(not set)',
     })
   })
 
   test('without referral', () => {
     expect(
       new AccessData({
-        referral: ''
+        referral: '',
       })
     ).toMatchObject({
       channel: 'direct',
       source: 'direct',
-      medium: '(not set)'
+      medium: '(not set)',
     })
   })
 })

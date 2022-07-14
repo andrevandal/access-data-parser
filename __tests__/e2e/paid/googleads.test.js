@@ -1,6 +1,7 @@
 import AccessData from '@/index.ts'
 
-import { describe, expect, test } from 'vitest';
+import { describe, expect, test } from 'vitest'
+
 describe('test google ads support', () => {
   test('complete UTMs', () => {
     expect(
@@ -10,7 +11,7 @@ describe('test google ads support', () => {
         utm_campaign: 'campaign',
         utm_content: 'content',
         utm_term: 'ketword',
-        gclid: 'gclid'
+        gclid: 'gclid',
       })
     ).toMatchObject({
       source: 'googleads',
@@ -19,32 +20,32 @@ describe('test google ads support', () => {
       content: 'content',
       term: 'ketword',
       gclid: 'gclid',
-      channel: 'paid'
+      channel: 'paid',
     })
   })
 
   test('only gclid', () => {
     expect(
       new AccessData({
-        gclid: 'gclid'
+        gclid: 'gclid',
       })
     ).toMatchObject({
       source: 'googleads',
       medium: 'cpc',
       gclid: 'gclid',
-      channel: 'paid'
+      channel: 'paid',
     })
   })
 
   test('only source', () => {
     expect(
       new AccessData({
-        source: 'googleads'
+        source: 'googleads',
       })
     ).toMatchObject({
       source: 'googleads',
       medium: 'cpc',
-      channel: 'paid'
+      channel: 'paid',
     })
   })
 })

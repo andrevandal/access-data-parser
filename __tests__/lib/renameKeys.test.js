@@ -1,4 +1,4 @@
-import { describe, expect, test } from 'vitest';
+import { describe, expect, test } from 'vitest'
 import renameKeys from '@/lib/renameKeys'
 
 describe('renameKeys', () => {
@@ -8,7 +8,7 @@ describe('renameKeys', () => {
   test('A to B; no change prop C', () => {
     expect(renameKeys({ A: 'B' }, { A: 'B', C: 'C' })).toMatchObject({
       B: 'B',
-      C: 'C'
+      C: 'C',
     })
   })
 })

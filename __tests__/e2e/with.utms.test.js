@@ -1,6 +1,6 @@
 import AccessData from '@/index.ts'
 
-import { describe, expect, test } from 'vitest';
+import { describe, expect, test } from 'vitest'
 
 describe('test rename props', () => {
   test('utm_source like to source', () => {
@@ -10,7 +10,7 @@ describe('test rename props', () => {
         utm_medium: 'medium',
         utm_campaign: 'campaign',
         utm_content: 'content',
-        utm_term: 'term'
+        utm_term: 'term',
       })
     ).toMatchObject({
       source: 'source',
@@ -18,7 +18,7 @@ describe('test rename props', () => {
       campaign: 'campaign',
       content: 'content',
       term: 'term',
-      channel: 'medium'
+      channel: 'medium',
     })
   })
 
@@ -29,7 +29,7 @@ describe('test rename props', () => {
         utmMedium: 'medium',
         utmCampaign: 'campaign',
         utmContent: 'content',
-        utmTerm: 'term'
+        utmTerm: 'term',
       })
     ).toMatchObject({
       source: 'source',
@@ -37,18 +37,18 @@ describe('test rename props', () => {
       campaign: 'campaign',
       content: 'content',
       term: 'term',
-      channel: 'medium'
+      channel: 'medium',
     })
   })
 
   test('referral to referrer', () => {
     expect(
       new AccessData({
-        referral: 'referral'
+        referral: 'referral',
       })
     ).toMatchObject({
       referrer: 'referral',
-      channel: 'referral'
+      channel: 'referral',
     })
   })
 })
@@ -58,36 +58,36 @@ describe('test some channels', () => {
     expect(
       new AccessData({
         utm_source: 'RD+Station',
-        utm_medium: 'email'
+        utm_medium: 'email',
       })
     ).toMatchObject({
       source: 'RD+Station',
       medium: 'email',
-      channel: 'email'
+      channel: 'email',
     })
   })
   test('channel == e-mail', () => {
     expect(
       new AccessData({
         utm_source: 'RD+Station',
-        utm_medium: 'e-mail'
+        utm_medium: 'e-mail',
       })
     ).toMatchObject({
       source: 'RD+Station',
       medium: 'e-mail',
-      channel: 'email'
+      channel: 'email',
     })
   })
   test('channel == social', () => {
     expect(
       new AccessData({
         utm_source: 'blog',
-        utm_medium: 'sm'
+        utm_medium: 'sm',
       })
     ).toMatchObject({
       source: 'blog',
       medium: 'sm',
-      channel: 'social'
+      channel: 'social',
     })
   })
 })

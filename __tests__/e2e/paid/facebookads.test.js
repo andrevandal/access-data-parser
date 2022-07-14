@@ -1,6 +1,6 @@
 import AccessData from '@/index.ts'
 
-import { describe, expect, test } from 'vitest';
+import { describe, expect, test } from 'vitest'
 
 describe('test facebook ads support', () => {
   test('complete UTMs', () => {
@@ -11,7 +11,7 @@ describe('test facebook ads support', () => {
         utm_campaign: 'campaign',
         utm_content: 'content',
         utm_term: 'keyword',
-        fbclid: 'fbclid'
+        fbclid: 'fbclid',
       })
     ).toMatchObject({
       source: 'facebookads',
@@ -20,32 +20,32 @@ describe('test facebook ads support', () => {
       content: 'content',
       term: 'keyword',
       fbclid: 'fbclid',
-      channel: 'display'
+      channel: 'display',
     })
   })
 
   test('only fbclid', () => {
     expect(
       new AccessData({
-        fbclid: 'fbclid'
+        fbclid: 'fbclid',
       })
     ).toMatchObject({
       source: 'facebookads',
       medium: 'cpc',
       fbclid: 'fbclid',
-      channel: 'paid'
+      channel: 'paid',
     })
   })
 
   test('only source', () => {
     expect(
       new AccessData({
-        source: 'facebookads'
+        source: 'facebookads',
       })
     ).toMatchObject({
       source: 'facebookads',
       medium: 'cpc',
-      channel: 'paid'
+      channel: 'paid',
     })
   })
 })

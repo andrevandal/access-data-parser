@@ -1,10 +1,8 @@
-import { describe, expect, test } from 'vitest';
+import { describe, expect, test } from 'vitest'
 import checkChannel from '@/lib/checkChannel'
 import mediumTypes from '@/configs/mediumTypes'
 
-const randomString = Math.random()
-  .toString(36)
-  .substring(7)
+const randomString = Math.random().toString(36).substring(7)
 
 const defaultChannels = [
   'direct',
@@ -13,15 +11,13 @@ const defaultChannels = [
   'paid',
   'display',
   'referral',
-  randomString
+  randomString,
 ]
 
-defaultChannels.forEach(channel =>
-  mediumTypes.push({ id: channel, channel: channel })
-)
+defaultChannels.forEach((channel) => mediumTypes.push({ id: channel, channel }))
 
 describe('CheckChannel', () => {
-  mediumTypes.forEach(element => {
+  mediumTypes.forEach((element) => {
     test(`send ${element.id} => return ${element.channel}`, () => {
       expect(checkChannel(element.id)).toMatch(element.channel)
     })
