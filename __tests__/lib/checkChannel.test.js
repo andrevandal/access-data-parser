@@ -1,6 +1,6 @@
 import { describe, expect, test } from 'vitest';
-import checkChannel from './checkChannel'
-import mediumTypes from '../configs/mediumTypes'
+import checkChannel from '@/lib/checkChannel'
+import mediumTypes from '@/configs/mediumTypes'
 
 const randomString = Math.random()
   .toString(36)

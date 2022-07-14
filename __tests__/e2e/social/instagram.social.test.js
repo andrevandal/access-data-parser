@@ -1,4 +1,4 @@
-import AccessData from '../../src/index'
+import AccessData from '@/index.ts'
 
 import { describe, expect, test } from 'vitest';
 describe('instagram search support', () => {

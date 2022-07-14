@@ -1,7 +1,7 @@
 import { describe, expect, test } from 'vitest';
 
-import parseReferrer from './parseReferrer'
-import referrerTypes from '../configs/referrerTypes'
+import parseReferrer from '@/lib/parseReferrer'
+import referrerTypes from '@/configs/referrerTypes'
 
 
 const randomString = Math.random()

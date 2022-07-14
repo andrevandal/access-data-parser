@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'vitest';
-import renameKeys from './renameKeys'
+import renameKeys from '@/lib/renameKeys'
 
 describe('renameKeys', () => {
   test('A to B', () => {
