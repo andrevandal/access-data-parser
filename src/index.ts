@@ -28,7 +28,7 @@ function accessData(oldQueries: defaultQueryKeysProps) {
   } as accessDataParams
 
   const isGoogleAds = !!queries.gclid || queries.source === 'googleads'
-  const isFacebookAds = !!queries.fbclid || queries.source === 'facebookads'
+  const isFacebookAds = queries.source === 'facebookads'
   const isDirectAccess =
     !queries.source && !queries.referrer && !isFacebookAds && !isGoogleAds
 
