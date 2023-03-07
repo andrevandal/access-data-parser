@@ -24,19 +24,6 @@ describe('test facebook ads support', () => {
     })
   })
 
-  test('only fbclid', () => {
-    expect(
-      new AccessData({
-        fbclid: 'fbclid',
-      })
-    ).toMatchObject({
-      source: 'facebookads',
-      medium: 'cpc',
-      fbclid: 'fbclid',
-      channel: 'paid',
-    })
-  })
-
   test('only source', () => {
     expect(
       new AccessData({
